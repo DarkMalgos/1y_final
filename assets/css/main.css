@@ -203,7 +203,7 @@ header>nav>div~div>ul>li:not(:nth-child(2)):not(:nth-child(4)) a:hover {
     }
     #cont-menu {
         display: none;
-        position: static;
+        position: absolute;
     }
     nav#menu-prin>div~div>ul {
         flex-direction: column;

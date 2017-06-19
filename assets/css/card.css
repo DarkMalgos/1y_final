@@ -121,3 +121,7 @@ article#ecaillerie h2~div {
 .casper {
     visibility: hidden;
 }
+
+#carte {
+    display: none;
+}

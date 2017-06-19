@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <title>La Mascotte</title>
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/card.css">
     <link rel="stylesheet" media="screen and (max-width: 1024px)" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/card.css">
 </head>
 
 <body>
@@ -24,8 +25,8 @@
                     <li id="resto">
                         <a href="http://localhost:1337/">La Brasserie <i></i></a>
                         <ul class="OFF">
-                            <li><a href="">Le restaurant</a></li>
-                            <li><a href="">Le bar</a></li>
+                            <li><a href="">Histoire</a></li>
+                            <li><a href="/La_carte">La carte</a></li>
                         </ul>
                     </li>
                     <li><a href="">L'écaillerie</a></li>
@@ -47,16 +48,16 @@
             <header>
                 <div class="center-col">
                     <ul>
-                        <li>
+                        <li data='ecaillerie'>
                             <p>L'écaillerie</p>
                         </li>
-                        <li>
+                        <li data='carte'>
                             <p>A la carte</p>
                         </li>
-                        <li>
+                        <li data=''>
                             <p>Les menus</p>
                         </li>
-                        <li>
+                        <li data=''>
                             <p>Les Boissons</p>
                         </li>
                     </ul>
@@ -414,7 +415,152 @@
                             <p>+35€</p>
                         </div>
                     </div>
+                    <div>
+                        <div class="block-title">
+                            <h3>le royal mascotte</h3>
+                            <p>185€</p>
+                        </div>
+                        <div class="type">
+                            <p>3</p>
+                            <p>Belons</p>
+                            <p>n° 00</p>
+                        </div>
+                        <div class="type">
+                            <p>3</p>
+                            <p>Spéciales Tarbouriech</p>
+                            <p>n° 2</p>
+                        </div>
+                        <div class="type">
+                            <p>3</p>
+                            <p>Spéciales « Ostra Regal »</p>
+                            <p>n° 3</p>
+                        </div>
+                        <div class="type">
+                            <p>3</p>
+                            <p> Seven ou papillon rose</p>
+                            <p class='casper'></p>
+                        </div>
+                        <div class="type">
+                            <p>3</p>
+                            <p>Huîtres de Cancale</p>
+                            <p>n° 1</p>
+                        </div>
+                        <div class="type">
+                            <p>3</p>
+                            <p>Spéciales d’Isigny</p>
+                            <p>n° 3</p>
+                        </div>
+                        <div class="type">
+                            <p>2</p>
+                            <p>Clams</p>
+                            <p class="casper"></p>
+                        </div>
+                        <div class="type">
+                            <p>2</p>
+                            <p>Praires</p>
+                            <p class="casper"></p>
+                        </div>
+                        <div class="type">
+                            <p>2</p>
+                            <p>Palourdes</p>
+                            <p class="casper"></p>
+                        </div>
+                        <div class="type">
+                            <p>4</p>
+                            <p>Moules</p>
+                            <p class="casper"></p>
+                        </div>
+                        <div class="type">
+                            <p>4</p>
+                            <p>Amandes</p>
+                            <p class="casper"></p>
+                        </div>
+                        <div class="type">
+                            <p>6</p>
+                            <p>Grosses crevettes de Madagascar</p>
+                            <p class="casper"></p>
+                        </div>
+                        <div class="type">
+                            <p>1</p>
+                            <p>Portion de grosses crevettes grises</p>
+                            <p class="casper"></p>
+                        </div>
+                        <div class="type">
+                            <p>1</p>
+                            <p>Portion de gros bigorneaux</p>
+                            <p class="casper"></p>
+                        </div>
+                        <div class="type">
+                            <p>1</p>
+                            <p>Portion de bulots</p>
+                            <p class="casper"></p>
+                        </div>
+                        <div class="type">
+                            <p>4</p>
+                            <p>Langoustines</p>
+                            <p class="casper"></p>
+                        </div>
+                        <div class="type">
+                            <p>2</p>
+                            <p>Demi tourteaux</p>
+                            <p class="casper"></p>
+                        </div>
+                        <div class="type final">
+                            <p>1</p>
+                            <p>Homard</p>
+                            <p class="casper"></p>
+                        </div>
+                    </div>
                 </section>
+            </article>
+            <article id="carte" class="center-col">
+                <section id="produit">
+                    <h2></h2>
+                    <div>
+                        <div class="block-title">
+                            <h3>Les Produits de notre Epicerie Fine de la Mer …</h3>
+                            <p class="casper"></p>
+                        </div>
+                        <div class="type">
+                            <p>L’en-K de caviar osciètre, blinis et crème aigre</p>
+                            <p class="casper"></p>
+                            <p>28€</p>
+                        </div>
+                        <div class="type">
+                            <p>L’ Assiette Nordique », crème de raifort</p>
+                            <p class="casper"></p>
+                            <p>19€</p>
+                        </div>
+                        <div class="type">
+                            <p>Tapas d’Anchois Desclaux à Collioure</p>
+                            <p class="casper"></p>
+                            <p>16€</p>
+                        </div>
+                        <div class="type">
+                            <p>« La Millésimée » 2015 «Mademoiselle Perle », pain de campagne et beurre salé</p>
+                            <p class="casper"></p>
+                            <p>13€</p>
+                        </div>
+                        <div class="type">
+                            <p>Rillettes de rouget barbet au piment d’Espelette (Atelier du Poissonnier à Agon Coutainville)</p>
+                            <p class="casper"></p>
+                            <p>13€</p>
+                        </div>
+                        <div class="type final">
+                            <p>Rillettes de dorade, crevettes citron vert et gingembre (Atelier du Poissonnier)</p>
+                            <p class="casper"></p>
+                            <p>13€</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="entree_froide"></section>
+                <section id="entree_chaude"></section>
+                <section id="poisson"></section>
+                <section id="viande"></section>
+                <section id="incontournable"></section>
+                <section id="fromage"></section>
+                <section id="dessert"></section>
+                <section id="glace"></section>
             </article>
         </section>
     </main>
