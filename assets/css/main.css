@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    font-size: 20px;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -13,10 +15,6 @@
 .center-col {
     width: 1024px;
     margin: 0 auto;
-}
-
-nav {
-    height: 165px;
 }
 
 i {
@@ -98,21 +96,13 @@ i:before {
     }
 }
 
-nav {
+nav#menu-prin {
     position: relative;
-    padding-top: 80px;
+    padding-top: 30px;
 }
 
-#cont-menu {}
-
-.cont-menu-fix {
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.cont-burger {
-    position: fixed;
-    top: 10%;
+#cont-menu {
+    position: absolute;
 }
 
 #burger {
@@ -180,7 +170,6 @@ nav>div~div>ul {
 nav>div~div>ul li a {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
-    font-size: 20px;
     text-decoration: none;
     color: white;
 }
@@ -196,5 +185,39 @@ header>nav>div~div>ul>li:not(:nth-child(2)):not(:nth-child(4)) a:hover {
     #burger {
         left: 15px;
         margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 15px;
+    }
+    nav#menu-prin {
+        position: fixed;
+        z-index: 50;
+    }
+    nav#menu-prin>div {
+        position: relative;
+    }
+    #burger {
+        display: block;
+    }
+    #cont-menu {
+        display: none;
+        position: static;
+    }
+    nav#menu-prin>div~div>ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav#menu-prin>div~div>ul>li:not(:last-child) {
+        margin-bottom: 60px;
+    }
+    nav#menu-prin>div~div>ul>li>a {
+        font-size: 20px;
+    }
+    i {
+        display: none;
     }
 }

@@ -11,20 +11,26 @@ header>nav>div~div>ul>li:first-child a {
     transition: all ease 1s;
 }
 
+#home-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .overlay {
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.45);
 }
 
-header~div {
+#visit-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-header~div>div {
+#visit-card>div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,29 +49,28 @@ header~div>div {
     background-color: white;
 }
 
-header~div>div>p {
+#visit-card>div>p {
     color: white;
     font-family: 'Dosis', sans-serif;
     font-weight: 300;
     position: relative;
     margin: 0 10px;
-    font-size: 20px;
 }
 
-header~div>div~img~div {
+#visit-card>div~img~div {
     border-bottom: solid white 2px;
 }
 
-header~div>div~img~div p {
+#visit-card>div~img~div p {
     padding-bottom: 10px;
 }
 
-header~div>div~img~div div {
+#visit-card>div~img~div div {
     margin-bottom: 10px;
 }
 
 .scroll-arrow {
-    position: absolute;
+    position: relative;
     z-index: 3;
     /* above parallax */
     left: 50%;
@@ -107,9 +112,7 @@ header~div>div~img~div div {
     font-family: 'Dosis', sans-serif;
 }
 
-#La_brasserie>div.overlay {
-    background: rgba(0, 0, 0, 0.3);
-}
+
 
 #La_brasserie>div>div {
     display: flex;
@@ -132,7 +135,6 @@ h2.title-section {
 #La_brasserie>div>div>div~div {
     height: 50%;
     width: 750px;
-    font-size: 20px;
     flex-direction: column;
 }
 
@@ -156,7 +158,6 @@ a.button {
     padding: 10px;
     text-decoration: none;
     color: white;
-    font-size: 20px;
 }
 
 #La_carte {
@@ -169,9 +170,7 @@ a.button {
     font-family: 'Dosis', sans-serif;
 }
 
-#La_carte>div.overlay {
-    background: rgba(0, 0, 0, 0.3);
-}
+
 
 #La_carte>div>div {
     display: flex;
@@ -194,7 +193,6 @@ h2.title-section {
 #La_carte>div>div>div~div {
     height: 50%;
     width: 750px;
-    font-size: 20px;
     flex-direction: column;
 }
 
@@ -212,9 +210,7 @@ h2.title-section {
     font-family: 'Dosis', sans-serif;
 }
 
-#Contact>div.overlay {
-    background: rgba(0, 0, 0, 0.3);
-}
+
 
 #Contact>div>div {
     display: flex;
@@ -232,7 +228,6 @@ h2.title-section {
 #Contact>div>div>div~div {
     height: 50%;
     width: 750px;
-    font-size: 20px;
     flex-direction: column;
     justify-content: space-around;
 }
