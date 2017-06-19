@@ -1,0 +1,123 @@
+#burger {
+    display: block;
+    left: 40px;
+}
+
+#burger span,
+#burger span:before,
+#burger span:after {
+    background: black;
+}
+
+nav {
+    height: 0;
+}
+
+#cont-menu {
+    display: none;
+}
+
+#cont-menu ul li a {
+    color: black;
+}
+
+i {
+    color: black;
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    margin-left: 45%;
+    font-size: 50px;
+}
+
+main {
+    margin-top: 80px;
+}
+
+section {
+    font-family: 'Dosis', sans-serif;
+}
+
+section header {
+    padding-bottom: 10px;
+    border-bottom: solid black 2px;
+}
+
+section header div.center-col ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section header div.center-col ul li p {
+    color: black;
+    font-weight: 400;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+section header div.center-col ul li:not(:first-child) p {
+    color: #95989A;
+}
+
+section header div.center-col ul li p:hover {
+    color: black;
+}
+
+article#ecaillerie {
+    margin-top: 80px;
+}
+
+article#ecaillerie section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article#ecaillerie h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: solid black 2px;
+}
+
+article#ecaillerie h2~div {
+    width: 440px;
+}
+
+.block-title {
+    display: flex;
+    justify-content: space-between;
+    color: #40C9C5;
+    border-bottom: solid #40C9C5 1px;
+    margin-bottom: 20px;
+}
+
+.block-title h3,
+.block-title p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.localisation {
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.type {
+    display: flex;
+    justify-content: space-between;
+    color: #95989A;
+    margin-bottom: 20px;
+}
+
+.final {
+    margin-bottom: 40px;
+}
+
+.casper {
+    visibility: hidden;
+}

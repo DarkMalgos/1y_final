@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('/fonts/fontawesome-webfont.eot');
+    src: url('/fonts/fontawesome.otf') format('truetype'), url('/fonts/fontawesome-webfont.ttf') format('truetype'), url('/fonts/fontawesome-webfont.woff') format('woff'), url('/fonts/fontawesome-webfont.woff2') format('woff2');
+}
+
+.center-col {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+nav {
+    height: 165px;
+}
+
+i {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    cursor: pointer;
+    color: white;
+}
+
+i:before {
+    content: "\f107";
+}
+
+.OFF {
+    display: none;
+    margin: 5px 0 0 20px;
+}
+
+.ON {
+    display: block;
+    margin: 5px 0 0 20px;
+}
+
+.ON a:hover {
+    border-bottom: solid #40C9C5 2px;
+}
+
+.animation-fadeIn {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: menu-extend;
+    animation-name: menu-extend;
+}
+
+@-webkit-keyframes menu-extend {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes menu-extend {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animation-fadeOut {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: menu-extend;
+    animation-name: menu-disp;
+}
+
+@-webkit-keyframes menu-disp {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes menu-disp {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+nav {
+    position: relative;
+    padding-top: 80px;
+}
+
+#cont-menu {}
+
+.cont-menu-fix {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cont-burger {
+    position: fixed;
+    top: 10%;
+}
+
+#burger {
+    z-index: 50000;
+    display: none;
+    background: transparent;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    left: 0;
+}
+
+#burger span,
+#burger span:before,
+#burger span:after {
+    cursor: pointer;
+    border-radius: 5px;
+    height: 4px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    content: '';
+}
+
+#burger span:before {
+    top: -10px;
+}
+
+#burger span:after {
+    top: 10px;
+}
+
+#burger span,
+#burger span:before,
+#burger span:after {
+    transition: all 0.5s ease-in-out;
+}
+
+#burger.active span {
+    background-color: transparent;
+}
+
+#burger.active span:before,
+#burger.active span:after {
+    top: 50%;
+}
+
+#burger.active span:before {
+    transform: rotate(135deg);
+}
+
+#burger.active span:after {
+    transform: rotate(-135deg);
+}
+
+nav>div~div>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav>div~div>ul li a {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+header>nav>div~div>ul>li:not(:nth-child(2)):not(:nth-child(4)) a:hover {
+    border-bottom: solid #40C9C5 2px;
+}
+
+@media screen and (max-width: 1024px) {
+    .center-col {
+        width: 100%;
+    }
+    #burger {
+        left: 15px;
+        margin-right: 20px;
+    }
+}

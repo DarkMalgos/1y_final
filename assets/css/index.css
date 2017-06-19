@@ -1,0 +1,252 @@
+header>nav>div~div>ul>li:first-child a {
+    border-bottom: solid #40C9C5 2px;
+}
+
+#acceuil {
+    width: 100%;
+    height: 662px;
+    background: url("/img/acceuil0.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: all ease 1s;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+header~div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header~div>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line-top {
+    height: 2px;
+    width: 160px;
+    background-color: white;
+}
+
+.line-bottom {
+    height: 2px;
+    width: 30px;
+    background-color: white;
+}
+
+header~div>div>p {
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    position: relative;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+header~div>div~img~div {
+    border-bottom: solid white 2px;
+}
+
+header~div>div~img~div p {
+    padding-bottom: 10px;
+}
+
+header~div>div~img~div div {
+    margin-bottom: 10px;
+}
+
+.scroll-arrow {
+    position: absolute;
+    z-index: 3;
+    /* above parallax */
+    left: 50%;
+    bottom: 30px;
+    width: 42px;
+    height: 20px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSI5NiAxNjAgMzIwIDE5MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMzk2LjYgMTYwbDE5LjQgMjAuN0wyNTYgMzUyIDk2IDE4MC43bDE5LjMtMjAuN0wyNTYgMzEwLjV6Ii8+PC9zdmc+') center no-repeat;
+    margin-left: -23px;
+    cursor: pointer;
+    transform-origin: bottom center;
+    /* Hide text */
+    font-size: 0;
+    color: transparent;
+    animation: arrow-scroll 1s infinite ease;
+}
+
+@keyframes arrow-scroll {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+    55% {
+        transform: translateY(-7px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#La_brasserie {
+    width: 100%;
+    height: 662px;
+    background: url('/img/equipe.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+#La_brasserie>div.overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#La_brasserie>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#La_brasserie>div>div>div {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+h2.title-section {
+    font-weight: 600;
+    font-size: 80px;
+}
+
+#La_brasserie>div>div>div~div {
+    height: 50%;
+    width: 750px;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+#La_brasserie>div>div>div~div p {
+    font-weight: 300;
+}
+
+#La_brasserie>div>div>div~div p>span {
+    font-weight: 400;
+}
+
+#La_brasserie>div>div>div~div p>span~span {
+    font-weight: 200;
+}
+
+a.button {
+    margin-top: 64px;
+    font-weight: 400;
+    background-color: #40c9c5;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#La_carte {
+    width: 100%;
+    height: 662px;
+    background: url('/img/plateau.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+#La_carte>div.overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#La_carte>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#La_carte>div>div>div {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+h2.title-section {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+#La_carte>div>div>div~div {
+    height: 50%;
+    width: 750px;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+#La_carte>div>div>div~div p {
+    font-weight: 300;
+}
+
+#Contact {
+    width: 100%;
+    height: 662px;
+    background: url('/img/banc.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+#Contact>div.overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#Contact>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#Contact>div>div>div {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#Contact>div>div>div~div {
+    height: 50%;
+    width: 750px;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#Contact>div>div>div~div>div {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Contact>div>div>div~div p {
+    font-weight: 300;
+}
+
+#Contact a.button {
+    margin: 50px 0;
+}
