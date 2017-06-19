@@ -112,8 +112,6 @@ header>nav>div~div>ul>li:first-child a {
     font-family: 'Dosis', sans-serif;
 }
 
-
-
 #La_brasserie>div>div {
     display: flex;
     flex-direction: column;
@@ -170,8 +168,6 @@ a.button {
     font-family: 'Dosis', sans-serif;
 }
 
-
-
 #La_carte>div>div {
     display: flex;
     flex-direction: column;
@@ -210,8 +206,6 @@ h2.title-section {
     font-family: 'Dosis', sans-serif;
 }
 
-
-
 #Contact>div>div {
     display: flex;
     flex-direction: column;
@@ -244,4 +238,10 @@ h2.title-section {
 
 #Contact a.button {
     margin: 50px 0;
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        width: 300px;
+    }
 }
