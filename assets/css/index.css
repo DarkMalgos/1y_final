@@ -57,6 +57,11 @@ header>nav>div~div>ul>li:first-child a {
     margin: 0 10px;
 }
 
+#visit-card>div~img {
+    width: 400px;
+    height: auto;
+}
+
 #visit-card>div~img~div {
     border-bottom: solid white 2px;
 }
@@ -241,11 +246,17 @@ h2.title-section {
 }
 
 @media screen and (max-width: 768px) {
+    .line-top {
+        width: 120px;
+    }
+    #visit-card>div~img {
+        width: 300px;
+    }
     #La_brasserie p {
-        width: 350px;
+        width: 300px;
     }
     #La_carte p {
-        width: 350px;
+        width: 300px;
     }
     #La_brasserie>div>div>div~div {
         width: 100%;
@@ -257,6 +268,16 @@ h2.title-section {
         width: 100%;
     }
     #Contact p {
-        width: 350px;
+        width: 300px;
+    }
+    #Contact>div>div>div~div>div {
+        width: 100%;
+        justify-content: space-around;
+    }
+    #Contact>div>div>div~div>div>p:first-child {
+        width: 80px;
+    }
+    #Contact>div>div>div~div>div>p:last-child {
+        width: 175px;
     }
 }
