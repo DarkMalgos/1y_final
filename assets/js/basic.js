@@ -7,7 +7,12 @@ $(document).ready(function () {
             if (i != 2) ++i;
             else i = 0;
         }, 3500);
-
+    $('.scroll-arrow').click(function () {
+        $("html, body").animate({
+            scrollTop: $('#La_brasserie').offset().top
+        }, 1500);
+        return false;
+    });
     if ($(window).width() > 768) {
         window.onscroll = function () {
             if ($('body').scrollTop() > 600) {
