@@ -115,6 +115,10 @@ article>section>h2~div {
     margin-bottom: 20px;
 }
 
+.type p {
+    font-size: 15px;
+}
+
 .final {
     margin-bottom: 40px;
 }
