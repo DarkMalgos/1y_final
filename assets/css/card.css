@@ -83,8 +83,8 @@ article section {
     border-bottom: solid black 2px;
 }
 
-article#ecaillerie h2~div {
-    width: 440px;
+article>section>h2~div {
+    width: 80%;
 }
 
 .block-title {
