@@ -111,7 +111,7 @@ article>section>h2~div {
 .type {
     display: flex;
     justify-content: space-between;
-    color: #95989A;
+    color: slategrey;
     margin-bottom: 20px;
 }
 
