@@ -35,6 +35,12 @@ $(document).ready(function () {
                 display: 'block',
                 'margin-top': '80px'
             });
+            $('#resto ul').css({
+                position: 'static'
+            });
+            $('#actu ul').css({
+                position: 'static'
+            });
             $('nav#menu-prin>div~div>ul li a').css('color', 'white');
         } else {
             $('body').css('overflow', 'visible');

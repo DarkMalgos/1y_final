@@ -105,6 +105,12 @@ $(document).ready(function () {
                 display: 'block',
                 'margin-top': '80px'
             });
+            $('#resto ul').css({
+                position: 'static'
+            });
+            $('#actu ul').css({
+                position: 'static'
+            });
         } else {
             $('body').css('overflow', 'visible');
             $('#menu-prin').css({
