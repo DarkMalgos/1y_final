@@ -21,10 +21,6 @@ i {
     color: black;
 }
 
-header>nav>div~div>ul>li:nth-child(2) a {
-    border-bottom: solid #40C9C5 2px;
-}
-
 h1 {
     font-family: 'Dosis', sans-serif;
     font-size: 50px;
@@ -71,7 +67,8 @@ section header {
 }
 
 article#ecaillerie,
-article#carte {
+article#carte,
+article#menu {
     margin-top: 80px;
 }
 
@@ -121,7 +118,7 @@ article>section>h2~div {
 }
 
 .type p {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .final {
@@ -133,5 +130,9 @@ article>section>h2~div {
 }
 
 #carte {
+    display: none;
+}
+
+#menu {
     display: none;
 }

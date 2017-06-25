@@ -14,6 +14,66 @@ $(document).ready(function () {
         }, 1500);
         return false;
     });
+
+    $('#resto').hover(function () {
+        $('#menu-prin').css('height', '100px');
+        $('#resto ul').css('display', 'block');
+        console.log('toto');
+        $('#resto ul li:first-child').hover(function () {
+            $('#resto ul li:first-child a').css({
+                'border-bottom': 'solid #40C9C5 2px',
+                width: '100%'
+            });
+        }, function () {
+            $('#resto ul a').css('border-bottom', 'none');
+        });
+        $('#resto ul li:last-child').hover(function () {
+            $('#resto ul li:last-child a').css({
+                'border-bottom': 'solid #40C9C5 2px',
+                width: '100%'
+            });
+        }, function () {
+            $('#resto ul a').css('border-bottom', 'none');
+        });
+    }, function () {
+        $('#resto ul').fadeOut('low');
+        $('#menu-prin').css('height', 'auto');
+    });
+
+    $('#actu').hover(function () {
+        $('#menu-prin').css('height', '100px');
+        $('#actu ul').fadeIn('low');
+        $('#actu ul li:first-child').hover(function () {
+            $('#actu').css('position', 'relative');
+            $('#actu ul').css({
+                position: 'absolute',
+                width: '100%'
+            });
+            $('#actu ul li:first-child a').css({
+                'border-bottom': 'solid #40C9C5 2px',
+                width: '100%'
+            });
+        }, function () {
+            $('#actu ul a').css('border-bottom', 'none');
+        });
+        $('#actu ul li:last-child').hover(function () {
+            $('#actu').css('position', 'relative');
+            $('#actu ul').css({
+                position: 'absolute',
+                width: '100%'
+            });
+            $('#actu ul li:last-child a').css({
+                'border-bottom': 'solid #40C9C5 2px',
+                width: '100%'
+            });
+        }, function () {
+            $('#actu ul a').css('border-bottom', 'none');
+        });
+    }, function () {
+        $('#actu ul').fadeOut('low');
+        $('#menu-prin').css('height', 'auto');
+    });
+
     if ($(window).width() > 768) {
         window.onscroll = function () {
             if ($('body').scrollTop() > 600) {
@@ -32,65 +92,6 @@ $(document).ready(function () {
                 $('#cont-menu').css('position', 'absolute');
             }
         }
-
-        $('#resto').hover(function () {
-            $('#menu-prin').css('height', '100px');
-            $('#resto ul').css('display', 'block');
-            console.log('toto');
-            $('#resto ul li:first-child').hover(function () {
-                $('#resto ul li:first-child a').css({
-                    'border-bottom': 'solid #40C9C5 2px',
-                    width: '100%'
-                });
-            }, function () {
-                $('#resto ul a').css('border-bottom', 'none');
-            });
-            $('#resto ul li:last-child').hover(function () {
-                $('#resto ul li:last-child a').css({
-                    'border-bottom': 'solid #40C9C5 2px',
-                    width: '100%'
-                });
-            }, function () {
-                $('#resto ul a').css('border-bottom', 'none');
-            });
-        }, function () {
-            $('#resto ul').fadeOut('low');
-            $('#menu-prin').css('height', 'auto');
-        });
-
-        $('#actu').hover(function () {
-            $('#menu-prin').css('height', '100px');
-            $('#actu ul').fadeIn('low');
-            $('#actu ul li:first-child').hover(function () {
-                $('#actu').css('position', 'relative');
-                $('#actu ul').css({
-                    position: 'absolute',
-                    width: '100%'
-                });
-                $('#actu ul li:first-child a').css({
-                    'border-bottom': 'solid #40C9C5 2px',
-                    width: '100%'
-                });
-            }, function () {
-                $('#actu ul a').css('border-bottom', 'none');
-            });
-            $('#actu ul li:last-child').hover(function () {
-                $('#actu').css('position', 'relative');
-                $('#actu ul').css({
-                    position: 'absolute',
-                    width: '100%'
-                });
-                $('#actu ul li:last-child a').css({
-                    'border-bottom': 'solid #40C9C5 2px',
-                    width: '100%'
-                });
-            }, function () {
-                $('#actu ul a').css('border-bottom', 'none');
-            });
-        }, function () {
-            $('#actu ul').fadeOut('low');
-            $('#menu-prin').css('height', 'auto');
-        });
     }
 
     $('#burger').click(function () {
