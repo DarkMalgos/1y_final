@@ -49,24 +49,24 @@ section header {
     border-bottom: solid black 2px;
 }
 
-section header nav ul {
+#card-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-section header nav ul li p {
+#card-menu li p {
     color: black;
     font-weight: 400;
     font-size: 25px;
     cursor: pointer;
 }
 
-section header nav ul li:not(:first-child) p {
+#card-menu li:not(:first-child) p {
     color: #95989A;
 }
 
-section header nav ul li p:hover {
+#card-menu li p:hover {
     color: black;
 }
 

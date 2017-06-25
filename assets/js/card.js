@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    var old = $('#card-menu li:first-child');
+
     if ($(window).width() > 768) {
         window.onscroll = function () {
             if ($('body').scrollTop() > 600) {
@@ -55,4 +57,12 @@ $(document).ready(function () {
             $('nav#menu-prin>div~div>ul li a').css('color', 'black');
         }
     });
+
+    $('#card-menu li').click(function () {
+        old.find('p').css('color', '#95989A');
+        $('#' + old.attr('data')).fadeOut('low');
+        $(this).find('p').css('color', 'black');
+        $('#' + $(this).attr('data')).fadeIn('low');
+        old = $(this);
+    })
 });
