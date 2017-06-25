@@ -5,6 +5,8 @@
 }
 
 body>header {
+    display: flex;
+    flex-direction: column;
     height: 50px;
 }
 
@@ -19,9 +21,12 @@ i {
     color: black;
 }
 
+header>nav>div~div>ul>li:nth-child(2) a {
+    border-bottom: solid #40C9C5 2px;
+}
+
 h1 {
     font-family: 'Dosis', sans-serif;
-    margin-left: 45%;
     font-size: 50px;
 }
 
@@ -30,34 +35,38 @@ main {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Dosis', sans-serif;
 }
 
 section header {
+    width: 100%;
     height: auto;
     margin-top: 40px;
     padding-bottom: 10px;
     border-bottom: solid black 2px;
 }
 
-section header div.center-col ul {
+section header nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-section header div.center-col ul li p {
+section header nav ul li p {
     color: black;
     font-weight: 400;
     font-size: 25px;
     cursor: pointer;
 }
 
-section header div.center-col ul li:not(:first-child) p {
+section header nav ul li:not(:first-child) p {
     color: #95989A;
 }
 
-section header div.center-col ul li p:hover {
+section header nav ul li p:hover {
     color: black;
 }
 
