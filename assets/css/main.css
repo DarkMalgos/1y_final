@@ -161,20 +161,30 @@ nav#menu-prin {
     transform: rotate(-135deg);
 }
 
-nav>div~div>ul {
+nav#menu-prin>div~div>ul {
     display: flex;
     justify-content: space-around;
 }
 
-nav>div~div>ul li a {
+nav#menu-prin>div~div>ul li a {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
     text-decoration: none;
     color: white;
 }
 
-header>nav>div~div>ul>li:not(:nth-child(2)):not(:nth-child(4)) a:hover {
+nav#menu-prin>div~div>ul>li:not(:nth-child(2)):not(:nth-child(4)) a:hover {
     border-bottom: solid #40C9C5 2px;
+}
+
+#resto,
+#actu {
+    position: relative;
+}
+
+#resto ul,
+#actu ul {
+    position: absolute;
 }
 
 @media screen and (max-width: 1024px) {

@@ -7,6 +7,7 @@ $(document).ready(function () {
             if (i != 2) ++i;
             else i = 0;
         }, 3500);
+
     $('.scroll-arrow').click(function () {
         $("html, body").animate({
             scrollTop: $('#La_brasserie').offset().top
@@ -34,14 +35,9 @@ $(document).ready(function () {
 
         $('#resto').hover(function () {
             $('#menu-prin').css('height', '100px');
-            $('#resto ul').fadeIn('low');
+            $('#resto ul').css('display', 'block');
             console.log('toto');
             $('#resto ul li:first-child').hover(function () {
-                $('#resto').css('position', 'relative');
-                $('#resto ul').css({
-                    position: 'absolute',
-                    width: '100%'
-                });
                 $('#resto ul li:first-child a').css({
                     'border-bottom': 'solid #40C9C5 2px',
                     width: '100%'
@@ -50,11 +46,6 @@ $(document).ready(function () {
                 $('#resto ul a').css('border-bottom', 'none');
             });
             $('#resto ul li:last-child').hover(function () {
-                $('#resto').css('position', 'relative');
-                $('#resto ul').css({
-                    position: 'absolute',
-                    width: '100%'
-                });
                 $('#resto ul li:last-child a').css({
                     'border-bottom': 'solid #40C9C5 2px',
                     width: '100%'

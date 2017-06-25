@@ -1,23 +1,17 @@
-#burger {
-    display: block;
-    left: 40px;
-}
-
 #burger span,
 #burger span:before,
 #burger span:after {
     background: black;
 }
 
-nav {
-    height: 0;
+body>header {
+    height: 50px;
 }
 
-#cont-menu {
-    display: none;
-}
-
-#cont-menu ul li a {
+nav#menu-prin>div~div>ul li a {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
     color: black;
 }
 
@@ -40,6 +34,8 @@ section {
 }
 
 section header {
+    height: auto;
+    margin-top: 40px;
     padding-bottom: 10px;
     border-bottom: solid black 2px;
 }
