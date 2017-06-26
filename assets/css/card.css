@@ -196,12 +196,34 @@ article>section>h2~div {
         margin-left: 15px;
     }
     .drink-size2 p:not(:first-child) {
-        margin-left: 20px;
+        margin-left: 15px;
     }
     .type2 p:not(:first-child) {
-        margin-left: 30px;
+        margin-left: 12px;
     }
+    /*
     .type2 p:nth-child(2) {
         margin-left: 20px;
+    }
+*/
+}
+
+@media screen and (max-width: 371px) {
+    #card-menu li p {
+        font-size: 20px;
+    }
+    .title-section {
+        font-size: 20px;
+    }
+    .block-title h3,
+    .block-title p {
+        font-size: 15px;
+    }
+    .localisation {
+        font-size: 13px;
+    }
+    .type p,
+    .type2 p {
+        font-size: 13px;
     }
 }
