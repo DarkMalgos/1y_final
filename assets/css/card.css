@@ -4,6 +4,11 @@
     background: black;
 }
 
+#burger.active span:before,
+#burger.active span:after {
+    background: white;
+}
+
 body>header {
     display: flex;
     flex-direction: column;

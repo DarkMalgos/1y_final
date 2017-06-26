@@ -152,6 +152,8 @@ nav#menu-prin {
     transform: rotate(-135deg);
 }
 
+
+
 nav#menu-prin>div~div>ul {
     display: flex;
     justify-content: space-around;
