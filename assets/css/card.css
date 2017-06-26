@@ -122,6 +122,21 @@ article>section>h2~div {
     font-size: 15px;
 }
 
+.type2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.type2 p {
+    color: slategrey;
+    font-size: 15px;
+}
+
+.type2 p:not(:first-child) {
+    margin-left: 80px;
+}
+
 .final {
     margin-bottom: 40px;
 }
