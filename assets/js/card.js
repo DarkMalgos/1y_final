@@ -3,9 +3,15 @@ $(document).ready(function () {
 
     $('#resto').hover(function () {
         $('#menu-prin').css('height', '100px');
-        $('#resto ul').css('display', 'block');
+        $('#resto ul').fadeIn('low');
         console.log('toto');
+        $('#resto ul').hover(function () {
+            $('#resto ul').fadeIn('low');
+        }, function () {
+            $('#resto ul').fadeOut('low');
+        });
         $('#resto ul li:first-child').hover(function () {
+            $('#resto ul').css('display', 'block');
             $('#resto ul li:first-child a').css({
                 'border-bottom': 'solid #40C9C5 2px',
                 width: '100%'
@@ -29,6 +35,11 @@ $(document).ready(function () {
     $('#actu').hover(function () {
         $('#menu-prin').css('height', '100px');
         $('#actu ul').fadeIn('low');
+        $('#actu ul').hover(function () {
+            $('#actu ul').fadeIn('low');
+        }, function () {
+            $('#actu ul').fadeOut('low');
+        });
         $('#actu ul li:first-child').hover(function () {
             $('#actu').css('position', 'relative');
             $('#actu ul').css({
@@ -62,6 +73,14 @@ $(document).ready(function () {
 
     if ($(window).width() > 768) {
         window.onscroll = function () {
+            console.log($('body').scrollTop());
+            if ($('body').scrollTop() > 100) {
+                $('body header:first-child').removeClass('center-col');
+                $('#menu-prin').removeClass('center-col');
+                $('#menu-prin').css({
+                    width: '100%'
+                });
+            }
             if ($('body').scrollTop() > 600) {
                 $('#menu-prin').css({
                     position: 'fixed',
@@ -72,6 +91,8 @@ $(document).ready(function () {
                 $('i').css('color', 'white');
                 $('#cont-menu').css('position', 'static');
             } else {
+                $('body header:first-child').addClass('center-col');
+                $('#menu-prin').addClass('center-col');
                 $('#menu-prin').css({
                     position: 'relative',
                     background: 'transparent',

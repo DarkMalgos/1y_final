@@ -68,7 +68,8 @@ section header {
 
 article#ecaillerie,
 article#carte,
-article#menu {
+article#menu,
+article#boisson {
     margin-top: 80px;
 }
 
@@ -129,10 +130,20 @@ article>section>h2~div {
     visibility: hidden;
 }
 
+.drink-size {
+    width: 235px;
+    display: flex;
+    justify-content: space-between;
+}
+
 #carte {
     display: none;
 }
 
 #menu {
+    display: none;
+}
+
+#boisson {
     display: none;
 }
