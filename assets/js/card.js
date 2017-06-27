@@ -146,5 +146,5 @@ $(document).ready(function () {
         $(this).find('p').css('color', 'black');
         $('#' + $(this).attr('data')).fadeIn('low');
         old = $(this);
-    })
+    });
 });
