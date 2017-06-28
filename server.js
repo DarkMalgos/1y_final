@@ -17,7 +17,15 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + '/views/fr/index.html');
 });
 
+app.get('/en', function (req, res) {
+    res.sendFile(__dirname + '/views/fr/index.html');
+});
+
 app.get('/la_brasserie', function (req, res) {
+    res.sendFile(__dirname + '/views/fr/story.html');
+});
+
+app.get('/en/la_brasserie', function (req, res) {
     res.sendFile(__dirname + '/views/fr/story.html');
 });
 
@@ -25,17 +33,34 @@ app.get('/la_carte', function (req, res) {
     res.sendFile(__dirname + '/views/fr/card.html');
 });
 
-app.get('/contact', function (req, res) {
-    res.sendFile(__dirname + '/views/fr/contact.html');
+app.get('/en/la_carte', function (req, res) {
+    res.sendFile(__dirname + '/views/fr/card.html');
 });
 
 app.get('/Lecaillerie', function (req, res) {
     res.sendFile(__dirname + '/views/fr/ecaillerie.html');
 });
 
+app.get('/en/Lecaillerie', function (req, res) {
+    res.sendFile(__dirname + '/views/fr/ecaillerie.html');
+});
+
 app.get('/Actualité', function (req, res) {
     res.sendFile(__dirname + '/views/fr/actu.html');
 });
+
+app.get('/en/Actualité', function (req, res) {
+    res.sendFile(__dirname + '/views/fr/actu.html');
+});
+
+app.get('/contact', function (req, res) {
+    res.sendFile(__dirname + '/views/fr/contact.html');
+});
+
+app.get('/en/contact', function (req, res) {
+    res.sendFile(__dirname + '/views/fr/contact.html');
+});
+
 //app.post('/', function (req, res) {});
 
 server.listen(port);
