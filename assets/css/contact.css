@@ -1,0 +1,65 @@
+body {
+    /*
+    background: url('/img/banc.jpg') center no-repeat;
+    background-size: cover;
+*/
+    font-family: 'Dosis', sans-serif;
+}
+
+.overlay {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+body>div>header {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+
+#contact {
+    margin-top: 80px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-inf {
+    color: #40c9c5;
+    border-bottom: solid #40c9c5 1px;
+}
+
+.MB {}
+
+#reserver {
+    margin-top: 80px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1.title-section {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: solid white 2px;
+}
+
+h2.title-section {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid white 2px;
+}
+
+.sub-title {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 40px;
+}

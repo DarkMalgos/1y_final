@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>La Mascotte</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+
+<body>
+    <div class="overlay">
+        <header class="center-col">
+            <nav id="menu-prin" class="center-col">
+                <div>
+                    <div id="burger">
+                        <span></span>
+                    </div>
+                </div>
+                <div id="cont-menu" class="center-col">
+                    <ul>
+                        <li><a href="/">Accueil</a></li>
+                        <li id="resto">
+                            <a>La Brasserie <i></i></a>
+                            <ul class="OFF">
+                                <li><a href="/Histoire">- Histoire</a></li>
+                                <li><a href="/La_carte">- La carte</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/L'ecaillerie">L'écaillerie</a></li>
+                        <li id="actu">
+                            <a>Nos actualitées <i></i></a>
+                            <ul class="OFF">
+                                <li><a href="/Event">- événements</a></li>
+                                <li><a href="/Presse">- La presse</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="center-col">
+            <section id='contact'>
+                <h1 class="title-section">Contact</h1>
+                <div>
+                    <p class='title-inf'>adresse</p>
+                    <p>52 Rue des Abbesses, 75018, Paris</p>
+                    <p class='title-inf'>téléphone</p>
+                    <p>01 46 06 28 15</p>
+                    <p class='title-inf'>Accès</p>
+                    <p>Metro : <span class="MB">M12</span> Abbesses, <span>M2</span> Blanche ou <span>M2/M12</span> Pigalle</p>
+                    <p>Bus : <span>30/67</span> Pigalle</p>
+                    <p class='title-inf'>Ouverture</p>
+                    <p>Ouvert 7/7 jours de 8h à 23h30, service non stop à partir de 12h y compris au restaurant.</p>
+                </div>
+            </section>
+            <section id='reserver'>
+                <h2 class="title-section">Réserver</h2>
+                <p class="sub-title">Réservation conseillée en particulier les soirs en week-end.</p>
+                <form action="/contact" method="post">
+                    <!--
+                        <input type="text" id="firstname" name="firstname" placeholder="Prénom">
+                        <input type="text" id="lastname" name="lastname" placeholder="Nom">
+                        <input type="text" id="age" name="age" placeholder="Age">
+                        <input type="text" id="position" name="position" placeholder="Emploi">
+                        <select id="party" name="party">
+                            <option value="0">Choisis ton parti</option>
+                        </select>
+                        <input type="text" id="bio" name="bio" placeholder="Biographie">
+                        -->
+                    <label for="">Nom :</label>
+                    <input type="text">
+                    <label for="datepicker">Date :</label>
+                    <input type="text" id="datepicker">
+                    <label for="">Horaire :</label>
+                    <p>Midi</p>
+                    <input type="radio" name='horaire' value='Midi'>
+                    <p>Soir</p>
+                    <input type="radio" name='horaire' value='Soir'>
+                    <label for="">Nombre</label>
+                    <input type="text">
+                    <input type="submit" value="Réserver">
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#datepicker").datepicker();
+        });
+
+    </script>
+    <script src="/js/card.js"></script>
+</body>
+
+</html>
