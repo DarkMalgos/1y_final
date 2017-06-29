@@ -18,7 +18,6 @@
     #contact {
         margin-top: 80px;
         width: inherit;
-        height: 45vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -47,7 +46,6 @@
     #reserver {
         margin-top: 40px;
         width: inherit;
-        height: 50vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -152,14 +150,4 @@
         margin-top: 20px;
     }
     
-    @media screen and (max-width: 1024px) {
-        #contact {
-            height: 100vh;
-        }
-        #reserver {
-            height: auto;
-        }
-        #reserver:hover input {
-            margin-top: 150px;
-        }
-    }
+    @media screen and (max-width: 1024px) {}
