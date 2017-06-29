@@ -81,25 +81,21 @@
     }
     
     label {
-        color: #40c9c5;
-        border-bottom: solid #40c9c5 2px;
+        color: white;
+        border-bottom: solid white 2px;
     }
     
     input[type=text] {
         background-color: transparent;
         border: none;
-        border-bottom: solid white 2px;
-        color: white;
+        border-bottom: solid #40c9c5 2px;
+        color: #40c9c5;
     }
     
     input[type=number] {
         background-color: transparent;
         border: none;
-        border-bottom: solid white 2px;
-        color: white;
-    }
-    
-    input[type=radio] {
+        border-bottom: solid #40c9c5 2px;
         color: #40c9c5;
     }
     
