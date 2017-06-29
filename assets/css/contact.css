@@ -145,7 +145,7 @@ input[type=submit] {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     #contact {
         width: 90%;
         height: 100vh;
