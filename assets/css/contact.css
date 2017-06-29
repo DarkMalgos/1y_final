@@ -157,7 +157,9 @@
             height: 100vh;
         }
         #reserver {
-            margin-top: 200px;
             height: auto;
+        }
+        #reserver:focus input {
+            margin-top: 150px;
         }
     }
