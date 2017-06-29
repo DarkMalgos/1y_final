@@ -148,7 +148,7 @@ input[type=submit] {
 @media screen and (max-width: 768px) {
     #contact {
         width: 90%;
-        height: 45vh;
+        height: 100vh;
     }
     #reserver {
         margin-top: 40px;
