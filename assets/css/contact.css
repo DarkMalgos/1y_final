@@ -159,7 +159,7 @@
         #reserver {
             height: auto;
         }
-        #reserver:focus input {
+        #reserver:hover input {
             margin-top: 150px;
         }
     }
