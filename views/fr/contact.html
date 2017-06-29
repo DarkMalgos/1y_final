@@ -96,7 +96,7 @@
                     </div>
                     <div class="ord-lab2">
                         <label for="">Nombre</label>
-                        <input type="number" id="nombre" name="nombre" placeholder="1" required>
+                        <input type="number" id="number" name="number" placeholder="1" required>
                     </div>
                     <input type="submit" value="Réserver">
                 </form>
@@ -108,6 +108,7 @@
     <script>
         $(function() {
             $("#datepicker").datepicker();
+            $("#datepicker").datepicker("option", "dateFormat", "yy-mm-dd");
         });
 
     </script>
