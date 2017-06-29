@@ -85,6 +85,12 @@
         border-bottom: solid white 2px;
     }
     
+     ::-webkit-input-placeholder {
+        color: #40c9c5;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    
     input[type=text] {
         background-color: transparent;
         border: none;
