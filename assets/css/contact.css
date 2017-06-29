@@ -144,3 +144,14 @@ input[type=submit] {
     width: 40%;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    #contact {
+        width: 90%;
+        height: 45vh;
+    }
+    #reserver {
+        margin-top: 40px;
+        width: 90%;
+    }
+}
