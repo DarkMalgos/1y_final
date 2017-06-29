@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" media="screen and (max-width: 1024px)" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/jquery.timepicker.css">
     <link rel="stylesheet" href="/css/contact.css">
 </head>
 
@@ -49,14 +50,14 @@
                 <h1 class="title-section">Contact</h1>
                 <div>
                     <p class='title-inf'>adresse</p>
-                    <p>52 Rue des Abbesses, 75018, Paris</p>
+                    <p class='inf'>52 Rue des Abbesses, 75018, Paris</p>
                     <p class='title-inf'>téléphone</p>
-                    <p>01 46 06 28 15</p>
+                    <a href='tel:0146062815' class='inf'>01 46 06 28 15</a>
                     <p class='title-inf'>Accès</p>
-                    <p>Metro : <span class="MB">M12</span> Abbesses, <span>M2</span> Blanche ou <span>M2/M12</span> Pigalle</p>
-                    <p>Bus : <span>30/67</span> Pigalle</p>
+                    <p class='inf'>Metro : <span>M12</span> Abbesses, <span>M2</span> Blanche ou <span>M2/M12</span> Pigalle</p>
+                    <p class='inf'>Bus : <span>30/67</span> Pigalle</p>
                     <p class='title-inf'>Ouverture</p>
-                    <p>Ouvert 7/7 jours de 8h à 23h30, service non stop à partir de 12h y compris au restaurant.</p>
+                    <p class='inf'>Ouvert 7/7 jours de 8h à 23h30, service non stop à partir de 12h y compris au restaurant.</p>
                 </div>
             </section>
             <section id='reserver'>
@@ -73,17 +74,30 @@
                         </select>
                         <input type="text" id="bio" name="bio" placeholder="Biographie">
                         -->
-                    <label for="">Nom :</label>
-                    <input type="text">
-                    <label for="datepicker">Date :</label>
-                    <input type="text" id="datepicker">
-                    <label for="">Horaire :</label>
-                    <p>Midi</p>
-                    <input type="radio" name='horaire' value='Midi'>
-                    <p>Soir</p>
-                    <input type="radio" name='horaire' value='Soir'>
-                    <label for="">Nombre</label>
-                    <input type="text">
+                    <div class="lab-section">
+                        <div class="ord-lab">
+                            <label for="">Nom :</label>
+                            <input type="text" id="lastname" name="lastname" placeholder="Nom" required>
+                        </div>
+                        <div class="ord-lab">
+                            <label for="">Prénom :</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="Prénom">
+                        </div>
+                    </div>
+                    <div class="lab-section">
+                        <div class="ord-lab">
+                            <label for="datepicker">Date :</label>
+                            <input type="text" id="datepicker" name="datepicker" required>
+                        </div>
+                        <div class="ord-lab">
+                            <label for="">Horaire :</label>
+                            <input type="text" id="timepicker" name="timepicker" required>
+                        </div>
+                    </div>
+                    <div class="ord-lab2">
+                        <label for="">Nombre</label>
+                        <input type="number" id="nombre" name="nombre" placeholder="1" required>
+                    </div>
                     <input type="submit" value="Réserver">
                 </form>
             </section>
@@ -94,6 +108,18 @@
     <script>
         $(function() {
             $("#datepicker").datepicker();
+        });
+
+    </script>
+    <script src="/js/jquery.timepicker.min.js"></script>
+    <script>
+        $('#timepicker').timepicker({
+            'timeFormat': 'H:i:s',
+            'step': 30,
+            'disableTimeRanges': [
+                ['23', '23:40'],
+                ['00', '12']
+            ]
         });
 
     </script>

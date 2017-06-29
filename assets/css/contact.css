@@ -1,14 +1,12 @@
 body {
-    /*
     background: url('/img/banc.jpg') center no-repeat;
     background-size: cover;
-*/
     font-family: 'Dosis', sans-serif;
 }
 
 .overlay {
     width: 100%;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.65);
 }
 
 body>div>header {
@@ -20,21 +18,34 @@ body>div>header {
 #contact {
     margin-top: 80px;
     width: 100%;
-    height: 50vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#contact>div {
+    width: 100%;
+}
+
 .title-inf {
     color: #40c9c5;
     border-bottom: solid #40c9c5 1px;
+    font-size: 22px;
 }
 
-.MB {}
+a.inf {
+    text-decoration: none;
+}
+
+.inf {
+    margin: 10px 0;
+    color: white;
+    font-size: 20px;
+}
 
 #reserver {
-    margin-top: 80px;
+    margin-top: 40px;
     width: 100%;
     height: 50vh;
     display: flex;
@@ -62,4 +73,74 @@ h2.title-section {
     color: white;
     font-size: 15px;
     margin-bottom: 40px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: #40c9c5;
+    border-bottom: solid #40c9c5 2px;
+}
+
+input[type=text] {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid white 2px;
+    color: white;
+}
+
+input[type=radio] {
+    color: #40c9c5;
+}
+
+input[type=submit] {
+    color: white;
+    background-color: #40c9c5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.lab-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lab-section:not(:first-child) {
+    margin-top: 40px;
+}
+
+.ord-lab {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.ord-lab input[type=text] {
+    margin-top: 20px;
+}
+
+.ord-lab2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.ord-lab2 label {
+    width: 40%;
+}
+
+.ord-lab2 input[type=text] {
+    width: 40%;
+    margin-top: 20px;
 }
