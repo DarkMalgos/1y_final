@@ -8,7 +8,7 @@ const app = express();
 /* CREATION DU SERVER */
 const server = require('http').createServer(app);
 /* variable globales */
-var port = 8080
+var port = 1337;
 
 /* ROAD TO ASSETS DIRECTORY */
 app.use('/css', express.static(__dirname + '/assets/css'));
@@ -23,6 +23,7 @@ var connection = function () {
         password: '',
         database: 'mascotte_db'
     });
+    l_histoire
 }
 
 //connection for mac
@@ -50,11 +51,11 @@ app.get('/en', function (req, res) {
     res.sendFile(__dirname + '/views/fr/index.html');
 });
 
-app.get('/la_brasserie', function (req, res) {
+app.get('/L_histoire', function (req, res) {
     res.sendFile(__dirname + '/views/fr/story.html');
 });
 
-app.get('/en/la_brasserie', function (req, res) {
+app.get('/en/L_histoire', function (req, res) {
     res.sendFile(__dirname + '/views/fr/story.html');
 });
 
