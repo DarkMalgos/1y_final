@@ -1,12 +1,14 @@
 /* EXPRESS */
-var express = require('express');
-var bodyParser = require('body-parser');
-var mysql = require('mysql');
-var app = express();
+const express = require('express');
+const bodyParser = require('body-parser');
+const mysql = require('mysql');
+const nodemailer = require('nodemailer');
+var smtpTransport = require('nodemailer-smtp-transport');
+const app = express();
 /* CREATION DU SERVER */
-var server = require('http').createServer(app);
+const server = require('http').createServer(app);
 /* variable globales */
-var port = 1337
+var port = 8080
 
 /* ROAD TO ASSETS DIRECTORY */
 app.use('/css', express.static(__dirname + '/assets/css'));
@@ -81,11 +83,12 @@ app.get('/en/Actualité', function (req, res) {
 });
 
 app.get('/contact', function (req, res) {
+    console.log('on form')
     res.sendFile(__dirname + '/views/fr/contact.html');
 });
 
 app.post('/contact', function (req, res) {
-    var q = "INSERT INTO reservation (firstname, lastname, jour, heure, nb_couvert) VALUES ('" + req.body.firstname + "', '" + req.body.lastname + "', '" + req.body.datepicker + "', '" + req.body.timepicker + "', " + req.body.number + ");",
+    let q = "INSERT INTO reservation (firstname, lastname, jour, heure, nb_couvert) VALUES ('" + req.body.firstname + "', '" + req.body.lastname + "', '" + req.body.datepicker + "', '" + req.body.timepicker + "', " + req.body.number + ");",
         co = connection();
     co.connect();
     co.query(q, function (error, results, fields) {
@@ -93,13 +96,36 @@ app.post('/contact', function (req, res) {
         res.sendFile(__dirname + '/views/fr/contact.html');
     });
     co.end();
+
+    let email = 'nom: ' + req.body.lastname + ' ' + req.body.firstname + ' date: ' + req.body.datepicker + ' heure: ' + req.body.timepicker + ' nombre: ' + req.body.number;
+
+    let transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+            user: 'reservation.mascotte@gmail.com',
+            pass: 'totolola42'
+        }
+    });
+    // setup email data with unicode symbols
+    let mailOptions = {
+        from: '"Form on website" <reservation.mascotte@gmail.com>', // sender address
+        to: 'reservation.mascotte@gmail.com', // list of receivers
+        subject: 'Nouvelle réservation', // Subject line
+        text: email // plain text body
+    };
+
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, function (error, info) {
+        console.log('degage');
+        if (error) return console.log(error);
+
+        console.log('Message sent: ' + info.response);
+    });
 });
 
 app.get('/en/contact', function (req, res) {
     res.sendFile(__dirname + '/views/fr/contact.html');
 });
-
-//app.post('/', function (req, res) {});
 
 server.listen(port);
 console.log("application live on port " + port);
